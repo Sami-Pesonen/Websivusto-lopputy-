@@ -12,6 +12,21 @@ margin: none;}
 .navbar {background-color: lightblue;
 color: navy}
 
+.grid-container {
+display: grid;
+grid-template-columns: repeat(12, [col-start] 1fr);
+gap: 20px;
+}
+
+.grid-item
+{background-color: aqua;
+}
+
+.grid-item:first-child {
+background-color: aquamarine;
+grid-column: col-start / span 12;
+} 
+
 .flex-container
 {display: flex;
 flex-direction: row;
