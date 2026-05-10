@@ -1,8 +1,8 @@
 p {color: blue;}
 
 header {background-color: aqua;}
-<--We have the bodypage color set and, currenly we have the body size at 1664px that is common on MACos systems.-->
-main {background-color: aliceblue;
+/*We have the bodypage color set and, currenly we have the body size at 1664px that is common on MACos systems.*/
+main {background-color: pink;
 height: 1664px;}
 
 footer {background-color: lightblue;
