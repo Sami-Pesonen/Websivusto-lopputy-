@@ -28,7 +28,8 @@ height: 200px;
 
 .photo-container
 {display: flex;
-flex-direction: row;}
+flex-direction: row;
+border-bottom: 2px solid hotpink;}
 
 .img
 {width: 100%;
@@ -37,8 +38,9 @@ height: auto;}
 .introductionbox
 {display: flex;
 flex-direction: row;    
-height: 300px;
 margin: 30px; 
+margin-top: 70px;
+margin-bottom: 70px;
 justify-content: space-around;
 }
 
@@ -58,12 +60,33 @@ color: hotpink;
 align-self: center;
 clip-path: circle(50%);}
 
+.grid-container
+{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+margin: 50px;
+margin-top: 70px;
+justify-content: space-around;}
+
+.card:hover
+{filter:opacity(50%);
+transition: 0.5s ease;}
+
+.card-body
+{background-color: hotpink;
+color: lightpink;
+border: 2px solid hotpink; }
+
+.card-text
+{color: lightpink;}
+
 @media (min-width: 440px)
 { .flex-container {flex-direction: row;}
 }
 
 @media (max-width: 440px)
 { .flex-container {flex-direction: column;}
+.introductionbox {flex-direction: column;}
 }
 
 
