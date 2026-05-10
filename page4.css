@@ -1,5 +1,24 @@
-.gallery-container {
-    float: left;
-    width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
-    padding: 5px; /* if you want space between the images */
+.gallery_item {
+  width: 80%;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    width: 100%;
+}
+
+.gallery_container {
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 440px) {
+    .gallery_container {
+        flex-direction: column;
+    }
 }
