@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*Styling for everything under the gallery container, in this case pretty much the whole page*/
 .gallery-container {
     max-width: 1224px;
     width: 90%;
@@ -10,6 +11,7 @@
     padding: 40px 0;
 }
 
+/*Styling for the page title*/
 .title {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -24,13 +26,14 @@
     display: flex;
     gap: 20px;
 }
-
+ /*Styling for all the column containers, currently each container has 3 pictures (this is subject to change)*/
 .column {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/*Styling for the image boxes, currently this effects all images on the page*/
 .img-rounded img {
     width: 100%;
     height: 100%;
@@ -41,6 +44,7 @@
     border-color: rgba(0, 255, 255, 0.795);
 }
 
+/*Makes the gallery into a single vertical column when the page is loded on a mobile device*/
 @media (max-width: 768px) {
     .photo-gallery {
         flex-direction: column;
