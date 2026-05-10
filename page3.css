@@ -5,6 +5,13 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/*Styling to signify what page the user is on*/
+.nav-link.active{
+    color: hotpink !important;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
 img {width: 100%}
 
 .container {

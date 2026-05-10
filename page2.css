@@ -3,6 +3,13 @@
 flex-direction: row;
 }
 
+/*Styling to signify what page the user is on*/
+.nav-link.active{
+    color: hotpink !important;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
 .flex-box 
 {background-color: aqua;
 margin: 5px;
