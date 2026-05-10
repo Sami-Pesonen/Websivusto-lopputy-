@@ -15,7 +15,8 @@ color: navy}
 .grid-container {
 display: grid;
 grid-template-columns: repeat(12, [col-start] 1fr);
-gap: 20px;
+gap: 10px;
+margin: 10px;
 }
 
 .grid-item
@@ -44,3 +45,10 @@ height: 200px;
 
 @media (max-width: 440px)
 { .flex-container {flex-direction: column;}}
+
+.photo-container
+{display: flex;
+flex-direction: row;}
+
+.img
+{size: 50%;}
