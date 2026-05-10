@@ -5,13 +5,14 @@
         <!--Perustiedot-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lopputyö</title>
+        <title>index.html</title>
          <link rel="stylesheet" type="text/css" href="stylesheet.css">
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
-    <body>
-        <!--Navbar+header-->
-        <header>
+
+    <body style="background-color: pink;">
+    <!--Navbar+header-->
+     <header>
          <!--bootstrap navbar, consistent in every page-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -22,19 +23,71 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
              <li class="nav-item"><a class="nav-link active" aria-current="page" href="page2.html">Otukset</a></li>
-            <li class="nav-item"><a class="nav-link" href="page3.html">Taide</a></li>
-            <li class="nav-item"><a class="nav-link" href="page4.html">Korut</a></li>
+            <li class="nav-item"><a class="nav-link active" href="page3.html">Taide</a></li>
+            <li class="nav-item"><a class="nav-link active" href="page4.html">Korut</a></li>
              </ul>
              </div>
             </div>
         </nav>
         <!--Navbar loppu-->
-        </header>
-        <!--sisältö-->
-        <main>
+    </header>
 
-        </main>
-        <!--footer-->
+        <!--sisältö-->
+    <main>
+        <!--Etusivun kuvakollaasi, flexbox-->
+            <div class="photo-container">
+                <div class="img"><img src="kuvat/img1firstpage.PNG" width="320px" height="435px" ></div>
+                <div class="img"><img src="kuvat/img2firstpage.jpg" alt="second img" width="320px" height="435px" ></div>
+                <div class="img"><img src="kuvat/img3firstpage.png" alt="third img" width="320px" height="435px"></div>
+                <div class="img"><img src="kuvat/img4firstpage.png" alt="third img" width="320px" height="435px"></div>
+          <!--<div class="img"><img src="kuvat/img5firstpage.png" alt="third img" width="253" height="355"></div>-->
+            </div>
+        <!--kuvakollaasi loppuu-->
+
+        <!--Esittely teksti, flexbox-->
+            <div class="introductionbox">
+                <div class="introduction-text">
+                    <h2 style="margin-top: 30px;">MIUKUMAUKU</h2>
+                        <p>hdkfkfökslkjfkhldkfjö</p>
+                </div>
+                <div class="introduction-img"><img src="kuvat/IMG_0301.PNG" alt="introduction photo" width="300px" height="auto"></div>
+            </div>
+        <!--Esittely boksi loppuu-->
+
+        <!--sisältöä, linkit muille sivuille, bootstrap cards-->
+         <div class="card-holder">
+             
+                 <div class="card" style="width: 20rem; border: 2px solid hotpink">
+                   <a href="page2.html">
+                    <img src="KUVAT/otus.JPG" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                    <p class="card-text"></p>
+                    </div>
+                </div>
+                
+                 <div class="card" style="width: 20rem; border: 2px solid hotpink">
+                    <a href="page3.html">
+                    <img src="kuvat/taide.PNG" class="card-img-top" alt="img">
+                    </a>
+                    <div class="card-body">
+                    <p class="card-text">MIUMAU</p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem; border: 2px solid hotpink">
+                    <a href="page4.html">
+                    <img src="KUVAT/muut.JPG" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                    <p class="card-text"></p>
+                    </div>
+                </div>
+         </div>
+        <!--sisältö loppuu-->
+     </main>
+       
+     <!--footer-->
         <footer>
             <p>miumau</p>
         </footer>
