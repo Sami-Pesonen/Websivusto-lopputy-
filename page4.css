@@ -46,7 +46,7 @@
     object-fit: cover;
     border-style:double;
     border-width: 5px;
-    border-color: rgba(0, 255, 255, 0.795);
+    border-color: hotpink;
 }
 
 /*Makes the gallery into a single vertical column when the page is loded on a mobile device*/
