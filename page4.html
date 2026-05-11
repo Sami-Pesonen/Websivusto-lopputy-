@@ -39,6 +39,35 @@
 
             <h2 class="title">Korut</h2>
 
+            <style>
+                .title {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+
+                .title::before,
+                .title::after {
+                    content: "";
+                    flex: 1;
+                    border-bottom: 2px solid hotpink;
+                }
+
+                .title::before {
+                    margin-right: 10px;
+                }
+
+                .title::after {
+                    margin-left: 10px;
+                } 
+
+                .title span {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: hotpink;
+                }
+            </style>
     <div class="photo-gallery">
 
         <!-- Column 1 -->
