@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="page4.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
-  <body>
+
+  <body style="background-color: pink;">
         <!--Navbar+header-->
         <header>
          <!--bootstrap navbar, consistent in every page-->
@@ -22,35 +23,101 @@
              </button>
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item"><a class="nav-link active" aria-current="page" href="page2.html">Otukset</a></li>
+            <li class="nav-item"><a class="nav-link" href="page2.html">Otukset</a></li>
             <li class="nav-item"><a class="nav-link" href="page3.html">Taide</a></li>
-            <li class="nav-item"><a class="nav-link" href="page4.html">Korut</a></li>
+             <li class="nav-item"><a class="nav-link active" href="page4.html">Korut</a></li>
              </ul>
              </div>
             </div>
         </nav>
         </header>
         <!--Navbar-->
+
         <!--pääsisältö-->
         <main>
-         <div class="gallery_container">
-            <div class="gallery_item">
-                <img src="koru1.jpg" alt="Koru 1">
+<div class="gallery-container">
+
+            <h2 class="title">Korut</h2>
+<!--Title styling to add lines to both sides of the text, wasn't able to make this work in CSS so here it is.-->
+            <style>
+                .title {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+
+                .title::before,
+                .title::after {
+                    content: "";
+                    flex: 1;
+                    border-bottom: 2px solid hotpink;
+                }
+
+                .title::before {
+                    margin-right: 10px;
+                }
+
+                .title::after {
+                    margin-left: 10px;
+                } 
+
+                .title span {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: hotpink;
+                }
+            </style>
+    <div class="photo-gallery">
+
+        <!-- Column 1 -->
+        <div class="column">
+            <div class="img-rounded">
+                <img src="kuvat/Koru3.jpg" alt="Koru 1">
             </div>
-            <div class="gallery_item">
-                <img src="koru2.jpg" alt="Koru 2">
+            <div class="img-rounded">
+                <img src="kuvat/Koru2.jpg" alt="Koru 2">
             </div>
-            <div class="gallery_item">
-                <img src="koru3.jpg" alt="Koru 3">
-                
+            <div class="img-rounded">
+                <img src="kuvat/Koru3.jpg" alt="Koru 3">
             </div>
-         </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+            <div class="img-rounded">
+                <img src="kuvat/Koru1.jpg" alt="Koru 1">
+            </div>
+            <div class="img-rounded">
+                <img src="kuvat/Koru3.jpg" alt="Koru 2">
+            </div>
+            <div class="img-rounded">
+                <img src="kuvat/Koru2.jpg" alt="Koru 3">
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column">
+            <div class="img-rounded">
+                <img src="kuvat/Koru1.jpg" alt="Koru 1">
+            </div>
+            <div class="img-rounded">
+                <img src="kuvat/Koru2.jpg" alt="Koru 2">
+            </div>
+            <div class="img-rounded">
+                <img src="kuvat/Koru1.jpg" alt="Koru 3">
+            </div>
+        </div>
+    </div>
+</div>
         </main>
         <!--pääsisältö loppu-->
+
         <!--footbar-->
         <footer>
             <p>Miumau</p>
         </footer>
-      
+<!--JavaScript for bootstrap, just to make the dropdown navbar work-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>  
 </html>

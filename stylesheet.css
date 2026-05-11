@@ -1,21 +1,25 @@
-
-
-p {color: hotpink;}
+p {color: blue;}
 
 header {background-color: aqua;}
-<!--We have the bodypage color set and, currenly we have the body size at 1664px that is common on MACos systems.-->
-main {background-color: aliceblue;
+/*We have the bodypage color set and, currenly we have the body size at 1664px that is common on MACos systems.*/
+main {background-color: pink;
 height: 1664px;}
 
 footer {background-color: hotpink;
 height: 100px;
 margin: none;}
 
+<<<<<<< HEAD
 .navbar {background-color: hotpink;
 color: navy}
+=======
+.navbar {background-color: lightblue;
+color: navy;}
+>>>>>>> 7244afa3080c38e826bc22443b3b3e7f2fc74a73
 
 .nav-item:hover {filter: opacity(50%);}
 
+<<<<<<< HEAD
 .photo-container
 {display: flex;
 flex-direction: row;
@@ -84,4 +88,11 @@ border: 2px solid hotpink; }
 .card-holder {flex-direction:column; gap: 50px;}
 }
 
+=======
+@media (min-width: 440px)
+{ .flex-container {flex-direction: row;}}
+
+@media (max-width: 440px)
+{ .flex-container {flex-direction: column;}}
+>>>>>>> 7244afa3080c38e826bc22443b3b3e7f2fc74a73
 

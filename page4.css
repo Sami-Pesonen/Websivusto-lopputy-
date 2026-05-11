@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Styling to signify what page the user is on*/
+.nav-link.active{
+    color: hotpink !important;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+/*Styling for everything under the gallery container, in this case pretty much the whole page*/
+.gallery-container {
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/*Styling for the page title*/
+.title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: hotpink 0.1em 0.1em 0.2em;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+ /*Styling for all the column containers, currently each container has 3 pictures (this is subject to change)*/
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Styling for the image boxes, currently this effects all images on the page*/
+.img-rounded img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    border-style:double;
+    border-width: 5px;
+    border-color: hotpink;
+}
+
+/*Makes the gallery into a single vertical column when the page is loded on a mobile device*/
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+    }
+}
