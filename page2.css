@@ -1,4 +1,12 @@
 
+.header
+{margin: 20px;
+color:hotpink;}
+
+.text
+{display: flex;
+margin: 20px;
+border: 2px solid hotpink;}
 
 .gallery
 {display: grid;
