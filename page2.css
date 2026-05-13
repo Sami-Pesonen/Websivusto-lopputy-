@@ -28,13 +28,19 @@ gap: 20px;
 margin: 20px;}
 
 .box
-{background-color: aqua;
-object-fit: cover;}
+{object-fit: cover;}
 
 .img
 {inline-size: 100%;
 block-size: 100%;
-object-fit: cover;}
+object-fit: cover; 
+width: 100%;
+height: 100%;
+border-radius: 5px;
+border-style:double;
+border-width: 5px;
+border-color: hotpink;
+}
 
 @media (min-width: 768px)
 { .flex-container {flex-direction: row;}}
