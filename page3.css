@@ -5,6 +5,37 @@
     font-weight: bold;
 }
 
+.title
+{margin: 20px;
+color:hotpink;
+text-align: center;
+display: flex;
+align-items: center;
+margin: 20px 0;}
+
+.title::before,
+.title::after {
+content: "";
+flex: 1;
+border-bottom: 2px solid hotpink;}
+
+.title::before {
+margin-right: 10px;}
+
+.title::after {
+margin-left: 10px;} 
+
+.title span {
+font-size: 1.5rem;
+font-weight: bold;
+color: hotpink;}
+
+.info-box
+{display: flex;
+margin: 20px;
+border: 2px solid hotpink;
+border-radius: 5px;}
+
 .grid-container
 {display: grid;
 max-width: 1224px;
