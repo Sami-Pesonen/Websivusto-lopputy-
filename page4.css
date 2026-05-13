@@ -4,7 +4,7 @@
 }
 /*Styling to signify what page the user is on*/
 .nav-link.active{
-    color: hotpink !important;
+    color: rgb(245, 178, 216) !important;
     text-decoration-line: underline;
     font-weight: bold;
 }
