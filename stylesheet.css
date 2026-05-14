@@ -72,10 +72,13 @@ transition: 0.5s ease;}
 .card-body
 {background-color: hotpink;
 color: lightpink;
-border: 2px solid hotpink; }
+border: 2px solid hotpink;
+align-content: center;
+ }
 
 .card-text
-{color: lightpink;}
+{color: lightpink;
+}
 
 @media (min-width: 440px)
 { .flex-container {flex-direction: row;}
