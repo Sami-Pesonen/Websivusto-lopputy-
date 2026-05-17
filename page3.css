@@ -1,34 +1,45 @@
 /*Styling to signify what page the user is on*/
 .nav-link.active{
-    color: hotpink !important;
+    color: rgb(245, 178, 216) !important;
     text-decoration-line: underline;
     font-weight: bold;
 }
 
-.title
-{margin: 20px;
-color:hotpink;
-text-align: center;
-display: flex;
-align-items: center;
-margin: 20px 0;}
+.title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: hotpink 0.1em 0.1em 0.2em;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
 
 .title::before,
 .title::after {
-content: "";
-flex: 1;
-border-bottom: 2px solid hotpink;}
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid hotpink;
+}
 
 .title::before {
-margin-right: 10px;}
+    margin-right: 10px;
+}
 
 .title::after {
-margin-left: 10px;} 
+    margin-left: 10px;
+    } 
 
 .title span {
-font-size: 1.5rem;
-font-weight: bold;
-color: hotpink;}
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hotpink;
+}
+
 
 .info-box
 {display: flex;

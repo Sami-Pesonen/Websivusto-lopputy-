@@ -1,3 +1,8 @@
+.nav-link.active{
+    color: rgb(245, 178, 216) !important;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
 
 .title
 {margin: 20px;
