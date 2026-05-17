@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 /*Styling to signify what page the user is on*/
 .nav-link.active{
     color: rgb(245, 178, 216) !important;
@@ -10,10 +6,9 @@
 }
 /*Styling for everything under the gallery container, in this case pretty much the whole page*/
 .gallery-container {
-    max-width: 1224px;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 /*Styling for the page title*/
@@ -35,7 +30,7 @@
 .title::after {
     content: "";
     flex: 1;
-    border-bottom: 2px solid hotpink;
+    border-bottom: 4px solid hotpink;
 }
 
 .title::before {
@@ -81,7 +76,7 @@ border-radius: 5px;}
 }
 
 /*Makes the gallery into a single vertical column when the page is loded on a mobile device*/
-@media (max-width: 768px) {
+@media (max-width: 440px) {
     .photo-gallery {
         flex-direction: column;
     }
