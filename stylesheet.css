@@ -37,7 +37,7 @@ justify-content: space-around;
 .introduction-text
 {border: 3px solid hotpink;
 border-radius: 5px;
-height: 300px;
+height: auto;
 width: 60%;
 justify-self: flex-start;      
 align-self: flex-start;
