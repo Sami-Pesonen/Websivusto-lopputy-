@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 /*Styling to signify what page the user is on*/
 .nav-link.active{
     color: rgb(245, 178, 216) !important;
@@ -10,13 +6,13 @@
 }
 /*Styling for everything under the gallery container, in this case pretty much the whole page*/
 .gallery-container {
-    max-width: 1224px;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding: 40px 0;
+    padding-bottom: 40px;
 }
 
 /*Styling for the page title*/
+<<<<<<< HEAD
 .title
 {margin: 20px;
 color:hotpink;
@@ -25,6 +21,42 @@ display: flex;
 align-items: center;
 margin: 20px 0;}
 
+=======
+.title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: hotpink 0.1em 0.1em 0.2em;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    flex: 1;
+    border-bottom: 4px solid hotpink;
+}
+
+.title::before {
+    margin-right: 10px;
+}
+
+.title::after {
+    margin-left: 10px;
+    } 
+
+.title span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hotpink;
+}
+>>>>>>> b719b5e6cbb657ee4fbb531dda1442359bb39d81
 
 .text
 {display: flex;
@@ -49,13 +81,17 @@ border-radius: 5px;}
     height: 100%;
     border-radius: 5px;
     object-fit: cover;
-    border-style:double;
+    border-style: double;
     border-width: 5px;
-    border-color: hotpink;
+    border-color: hotpink
 }
 
+.img-rounded img:hover {
+    scale: 1.02;
+    transition: 0.7s ease;
+}
 /*Makes the gallery into a single vertical column when the page is loded on a mobile device*/
-@media (max-width: 768px) {
+@media (max-width: 440px) {
     .photo-gallery {
         flex-direction: column;
     }
