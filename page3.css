@@ -1,10 +1,6 @@
 /*Styling to signify what page the user is on*/
 .nav-link.active{
-<<<<<<< HEAD
-    color: lightpink !important;
-=======
     color: rgb(245, 178, 216) !important;
->>>>>>> b719b5e6cbb657ee4fbb531dda1442359bb39d81
     text-decoration-line: underline;
     font-weight: bold;
 }
@@ -15,19 +11,13 @@
     padding-bottom: 40px;
 }
 
-.title {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    text-shadow: hotpink 0.1em 0.1em 0.2em;
-    margin-bottom: 2rem;
-    font-family: cursive;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
+.title
+{margin: 20px;
+color:hotpink;
+text-align: center;
+display: flex;
+align-items: center;
+margin: 20px 0;}
 
 .title::before,
 .title::after {

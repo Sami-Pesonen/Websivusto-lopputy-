@@ -6,7 +6,8 @@ height: auto;}
 
 footer {background-color: hotpink;
 height: 100px;
-margin: 0px;}
+margin: 0px;
+align-content: center;}
 
 /*Navigointi palkin tyylilliset muokkaukset*/
 .navbar {background-color: hotpink;}
