@@ -1,6 +1,5 @@
 p {color: rgb(237, 40, 119);}
 
-header {background-color: aqua;}
 /*We have the bodypage color set and, currenly we have the body size at 1664px that is common on MACos systems.*/
 main {
 height: auto;}
@@ -9,11 +8,12 @@ footer {background-color: hotpink;
 height: 100px;
 margin: none;}
 
-.navbar {background-color: hotpink;
-color: navy}
+/*Navigointi palkin tyylilliset muokkaukset*/
+.navbar {background-color: hotpink;}
 
 .nav-item:hover {filter: opacity(50%);}
 
+/*Etusivun kuvan tyylittely*/
 .photo-container
 {display: flex;
 flex-direction: row;
@@ -23,6 +23,7 @@ border-bottom: 2px solid hotpink;}
 {width: 100%; 
 height: auto;}
 
+/*informaatio boksin ja esittelykuvan tyylittelyt*/
 .introductionbox
 {display: flex;
 flex-direction: row;    
@@ -57,6 +58,7 @@ object-fit: cover;
 width: 100%;
 height: 100%;}
 
+/*kortti elementtien tyylittely*/
 .card-holder
 {display: flex;
 grid-template-columns: 1fr 1fr 1fr;
@@ -80,16 +82,14 @@ align-content: center;
 {color: lightpink;
 }
 
+/*mediaquaries eri laitteiden mukauttamista varten*/
 @media (min-width: 440px)
 { .flex-container {flex-direction: row;}
-
 .card-holder{flex-direction:row;}}
 
 
 @media (max-width: 440px)
-{ 
-
-.introductionbox {flex-direction: column;} .introduction-text {width: 100%; margin: 30px;}
+{ .introductionbox {flex-direction: column;} .introduction-text {width: 80%; margin: 30px; min-height: 430px;}
 .card-holder {flex-direction:column; gap: 50px;}
 }
 

@@ -1,4 +1,12 @@
 
+/*Styling to signify what page the user is on*/
+.nav-link.active{
+color: lightpink !important;
+text-decoration-line: underline;
+font-weight: bold;
+}
+
+/*otsikon tyylittely*/
 .title
 {margin: 20px;
 color:hotpink;
@@ -24,12 +32,14 @@ font-size: 1.5rem;
 font-weight: bold;
 color: hotpink;}
 
+/*info boksi tyylittely*/
 .text
 {display: flex;
 margin: 20px;
 border: 2px solid hotpink;
 border-radius: 5px;}
 
+/*kuva galleria tyylittely*/
 .grid-container
 {display: grid;
 max-width: 1224px;
@@ -64,6 +74,7 @@ border-width: 5px;
 border-color: hotpink;
 }
 
+/*mediaguaries eri näytön kokoja varten*/
 @media (min-width: 768px)
 { .flex-container {flex-direction: row;}}
 

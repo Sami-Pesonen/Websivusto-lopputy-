@@ -1,6 +1,6 @@
 /*Styling to signify what page the user is on*/
 .nav-link.active{
-    color: hotpink !important;
+    color: lightpink !important;
     text-decoration-line: underline;
     font-weight: bold;
 }
